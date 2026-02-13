@@ -1,0 +1,155 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #353941;
+    color: #90b8f8;
+}
+
+.first-color { 
+	background: #353941; 
+}
+	
+.second-color { 
+	background: #26282b; 
+}
+
+.third-color { 
+	background: #5f85db; 
+}
+
+.fourth-color { 
+	background: #90b8f8; 
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    width:100%;
+    margin: 0;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 3rem;
+}
+
+.logo {
+    padding-left: 25px;
+}
+
+.header {
+    display: flex;
+    left: 50%;
+    background-color: #26282b;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.menubar {
+    width: fit-content;
+    padding: 25px;
+    display: flex;
+    position: relative;
+}
+
+.menubutton {
+    display: flex;
+    padding-right: 50px;
+    transition: ease-in-out 0.25s;
+}
+
+.menubutton:hover {
+    transform: translateY(-5px);
+}
+
+.maincontent {
+    display: flex;
+    flex-direction: column;
+}
+
+.headingtext {
+    display: inline-block;
+    align-items: center;
+    align-self: center;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    padding-bottom: 250px;
+    margin-top: 15vh;
+    
+    animation-duration: 2s;
+    animation-name: slide-in;
+}
+
+@keyframes slide-in {
+    from {
+        translate: 0 10vh;
+        opacity: 0;
+
+    }
+
+    to {
+        translate: 0 0;
+        opacity: 100;
+    }
+}
+
+@keyframes horizontal-slide-in {
+    from {
+        translate: 10vh 0;
+        opacity: 0;
+
+    }
+
+    to {
+        translate: 0 0;
+        opacity: 100;
+    }
+}
+
+
+
+.blogs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.postbox {
+    padding: 15px;
+    text-align: center;
+    background-color: #26282b;
+    border-radius: 5px;
+    width: 25%;
+}
+
+.paragraphtext {
+    padding: 25px;
+    margin-top: 15vh;
+    background-color: #26282b;
+    border-radius: 5px;
+    
+    animation-duration: 2s;
+    animation-name: horizontal-slide-in;
+}
+
+.footer {
+    display: flex;
+    left: 50%;
+    background-color: #26282b;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}

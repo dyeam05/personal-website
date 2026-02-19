@@ -68,7 +68,18 @@ body {
     display: flex;
     padding-right: 50px;
     transition: ease-in-out 0.25s;
+    text-decoration: none;
+    color: #90b8f8;
 }
+
+.selectedbutton {
+    display: flex;
+    padding-right: 50px;
+    transform: translateY(-5px);
+    text-decoration: none;
+    color: #90b8f8;
+}
+
 
 .menubutton:hover {
     transform: translateY(-5px);

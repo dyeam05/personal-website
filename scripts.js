@@ -3,3 +3,7 @@ function ghConfirm() {
         window.open("https://github.com/dyeam05", '_blank').focus();
     }
 }
+
+function wipButton() {
+    alert("Page isn't finished yet, check back later.");
+}

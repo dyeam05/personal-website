@@ -1,6 +1,3 @@
-
-
-
 html {
     font-family: 'Courier New', Courier, monospace;
     background-color: #353941;
@@ -53,6 +50,11 @@ body {
 
 .logo {
     padding-left: 25px;
+    transition: ease-in-out 0.25s;
+}
+
+.logo:hover {
+    transform: translateY(-5px);
 }
 
 .header {
@@ -62,7 +64,7 @@ body {
     width: 100%;
     height: 100%;
     justify-content: space-between;
-    padding: 25px;
+    padding: 15px;
 }
 
 .menubar {
@@ -148,15 +150,24 @@ body {
 }
 
 .postbox {
+    opacity: 0;
     padding: 15px;
     text-align: center;
     background-color: #26282b;
     border-radius: 5px;
     width: 25%;
+
+    animation-name: slide-in;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
+
+
 
 @supports(animation-timeline: view()) {
     .paragraphtext {
+        opacity: 0;
         padding: 25px;
         margin-top: 15vh;
         background-color: #26282b;
@@ -166,7 +177,13 @@ body {
         animation-name: horizontal-slide-in;
         animation-timeline: view(y 70% 4%);
         animation-timing-function: linear;
+        animation-fill-mode: forwards;
     }
+}
+
+.scrollText {
+    height: 225px;
+    overflow-y: auto;
 }
 
 .footer {
@@ -176,7 +193,6 @@ body {
     width: 100%;
     height: 100%;
     justify-content: space-between;
-    margin-top: 10%;
-    padding: 1%;
+    margin-top: 11%;
 
 }

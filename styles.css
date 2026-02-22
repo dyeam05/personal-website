@@ -106,7 +106,7 @@ body {
     width: fit-content;
     height: fit-content;
     text-align: center;
-    padding-bottom: 250px;
+    padding-bottom: 10%;
     margin-top: 15vh;
     
     animation-duration: 2s;
@@ -156,10 +156,16 @@ body {
     border-radius: 5px;
     width: 25%;
 
+    transition: ease-in-out 0.25s;
+
     animation-name: slide-in;
     animation-delay: 2s;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+}
+
+.postbox:hover {
+    transform: translateY(-5px);
 }
 
 
@@ -194,4 +200,12 @@ body {
     justify-content: space-between;
     margin-top: 11%;
 
+}
+
+.footer h3 {
+    padding-left: 10px;
+}
+
+.footer p {
+    padding-right: 10px;
 }

@@ -6,6 +6,12 @@ html {
 
 .page-container {
     width: 100%;
+    height: 100%;
+}
+
+.content-wrap {
+    width: 100%;
+    height:100%;
 }
 
 .maincontent {
@@ -179,7 +185,7 @@ body {
 
 @supports(animation-timeline: view()) {
     .paragraphtext {
-        width: 100%;
+        width: 100% - 50px;
         opacity: 0;
         padding: 25px;
         margin-top: 15vh;

@@ -212,6 +212,7 @@ ul {
     scroll-snap-type: x mandatory;
     scroll-marker-group: after;
     scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
 ul::scroll-marker-group {

@@ -1,8 +1,21 @@
-function ghConfirm() {
-    if(confirm("Confirm redirect to github.com")) {
+function ghConfirm() {;
+    if(window.confirm("Confirm redirect to github.com?")) {
         window.open("https://github.com/dyeam05", '_blank').focus();
     }
 }
+
+function liConfirm() {;
+    if(window.confirm("Confirm redirect to LinkedIn.com?")) {
+        window.open("https://www.linkedin.com/in/daniel-yeaman/", '_blank').focus();
+    }
+}
+
+function hsConfirm() {;
+    if(window.confirm("Confirm redirect to Handshake.com?")) {
+        window.open("https://app.joinhandshake.com/profiles/dyeaman", '_blank').focus();
+    }
+}
+
 
 function wipButton() {
     alert("Page isn't finished yet, check back later.");

@@ -109,6 +109,27 @@ body {
     transform: translateY(-5px);
 }
 
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #26282b;
+    padding-top: 10px;
+}
+
+.dropdown-content .menubutton {
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
 .maincontent {
     display: flex;
     flex-direction: column;

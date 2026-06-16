@@ -342,6 +342,19 @@ img {
     padding: 15px;
 }
 
+.link-header {
+    transition: ease-in-out 0.25s;
+}
+
+.link-header:hover {
+    transform: translateY(-5px);
+}
+
+#bookstore-ss {
+    width: 72%;
+    justify-content: center;
+}
+
 .footer {
     display: flex;
     left: 50%;
